@@ -12,7 +12,7 @@ class SearchBar extends React.Component{
     onFormSubmit = event => {
         event.preventDefault();
 
-        //TODO: chamar método da classe pai
+        this.props.onFormSubmit(this.state.term);
     };
 
     render () {
